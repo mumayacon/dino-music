@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="es-mx">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="@mumayacon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>"Dino-Music™"</title>
+
+        <link rel="stylesheet" href="../data/css/bootstrap.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+        <link rel="shortcut icon" href="../data/icons/favicon.ico" type="image/x-icon">
+
+        <script src="../data/js/vue-3.js"></script>
+        <script src="../scripts/main/carousel.js"></script>
+        <script defer src="../scripts/main/data.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <?php
+        
+
+        
+        ?>
+        
+    </head>
+
+    <body class = "body">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../html/index.html" style="margin-left: 1%; margin-right: 1%;"> Dino-Music™ </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/cds.html"><tt>CDs</tt></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/vinyls.html"><tt>Vinilos</tt></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/special-items.html"><tt>Artículos Especiales</tt></a>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </nav>
+
+        <img src="../media/img/main.jpg" alt="nice" style="width: 100%; margin-bottom: -32.5%; ">
+
+        <form class="formu" id="Registro" action="../php/register.php" method="post">
+
+            <h1><tt>"Registrarse"</tt></h1>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Nombre</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <input class="input" type="text" id="nombre" name="nombre" placeholder=" Nombre" required>
+
+            </div>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Fecha de Nacimiento</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <input class="input" type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="Fecha de Nacimiento" required>
+
+            </div>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Correo Electrónico</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <input class="input"  type="email" id="correo" name="correo" placeholder=" Correo" required>
+
+            </div>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Teléfono</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <input class="input" type="tel" id="celular" name="celular" placeholder=" Celular" required>
+
+            </div>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Nacionalidad</label>
+            
+            </div>
+
+            <br>
+
+            <select id="nacionalidad" name="nacionalidad" class="input" style="text-align: center;">
+
+                <option value=""></option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Peruano">Peruano</option>
+
+            </select>
+
+            <br>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Género</label>
+            
+            </div>
+
+            <br>
+
+            <select id="genero" name="genero" class="input" style="text-align: center;">
+
+                <option value=""></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+
+            </select>
+
+            <br>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Usuario</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20"><g data-name="Layer 3" id="Layer_3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
+                <input class="input" type="text" id="username" name="username" placeholder=" Nombre de Usuario" required>
+
+            </div>
+
+            <br>
+
+            <div class="flex-column">
+
+                <label>Contraseña</label>
+            
+            </div>
+
+            <br>
+
+            <div class="inputForm">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+                <input class="input" type="password" id="contrasena" name="contrasena" placeholder=" Contraseña" required>
+
+            </div>
+
+            <br>
+
+            <button type="submit" class="button-submit">Registrarse</button>
+
+            <p class="p">
+                ¿Ya tienes una cuenta? <a href="../html/login.html"> Iniciar Sesión</a>
+            </p> 
+
+        </form>
+
+        <script src="../scripts/user/login.js"></script>
+        <script src="../scripts/main/validation.js"></script>
+
+        <section class="footer">
+
+            <div class="footer-row">
+
+                <div class="footer-col">
+
+                    <h4><tt>"Información"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Compresiones</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Colecciones</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h4><tt>"Explorar"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Discos de Regalo</a></li>
+                        <li><a href="#">Ultimos Discos</a></li>
+                        <li><a href="#">Temas</a></li>
+                        <li><a href="#">Discos Populares</a></li>
+                        <li><a href="#">Habilidades Artísticas</a></li>
+                        <li><a href="#">Nuevos Lanzamientos</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h4><tt>"Legal"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Acuerdos del Cliente</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                        <li><a href="#">Testimonios</a></li>
+                        <li><a href="#">Media Kit</a></li>
+
+                    </ul>
+
+                    </div>
+
+                    <div class="footer-col">
+
+                    <h4><tt>"Newsletter"</tt></h4>
+
+                    <p>
+                        <tt>Suscribete a nuestro newsletter para una dosis semanal
+                        de noticias, actualizaciones, consejos útiles, y
+                        ofertas exclusivas.</tt>
+                    </p>
+
+                    <form action="#">
+
+                        <input type="text" placeholder="Correo" required>
+                        <button type="submit"><tt>SUSCRIBIR</tt></button>
+
+                    </form>
+
+                    <div class="icons">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h6 style="text-align: center;">© <tt>2025 Dino-Music™ & Mumayacon . Todos los derechos reservados.</tt></h6>
+
+            <br>
+
+        </section>
+        
+    </body>
+
+</html>

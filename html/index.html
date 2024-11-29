@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="es-mx">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="@mumayacon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>"Dino-Music™"</title>
+
+        <link rel="stylesheet" href="../data/css/bootstrap.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+        <link rel="shortcut icon" href="../data/icons/favicon.ico" type="image/x-icon">
+
+        <script src="../data/js/vue-3.js"></script>
+        <script src="../scripts/main/carousel.js"></script>
+        <script defer src="../scripts/main/data.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <?php
+        
+
+        
+        ?>
+        
+    </head>
+
+    <body class = "body">
+
+        <div style="background-color: #00754e; color: #ffffff; text-align: center;"><tt>Black Friday: 30% de descuento + 20%  extra en productos seleccionados</tt></div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../html/index.html" style="margin-left: 1%; margin-right: 1%;"> Dino-Music™ </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/cds.html"><tt>CDs</tt></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/vinyls.html"><tt>Vinilos</tt></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/special-items.html"><tt>Artículos Especiales</tt></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <tt>Artistas</tt>
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu">
+
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                    <a class="nav-link" aria-current="page" style="text-align: right; margin-right: 1%;" href="../html/login.html"><tt>Iniciar Sesión</tt></a>
+                    
+                </div>
+
+            </div>
+
+        </nav>
+
+        <img src="../media/img/main.jpg" alt="nice" style="width: 100%; margin-bottom: -32.5%; ">
+
+        <div style="background-color: #ffffff; position: relative; height: 100%;" id="appVue">
+
+            <br>
+
+            <div class="album" v-for="product in products" style=" display: inline-table; padding: 2%; align-content: center;">
+
+                <br>
+
+                <table>
+
+                    <tr>
+
+                        <div class="card" style="width: 18rem; margin-left: 25%;">
+
+                            <img v-bind:src="product.cover" alt="product.title" class="cover">
+        
+                            <div class="card-body">
+        
+                              <h3 class="card-title"><tt>{{product.title}}</tt></h3>
+        
+                              <h6 class="card-title"><tt>{{product.artist}}</tt></h6>
+        
+                                <p class="card-text">
+                                    <tt>${{product.price}}</tt>
+                                </p>
+        
+                              <button class="boton-elegante">Comprar</button>
+        
+                            </div>
+        
+                        </div>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <section class="footer">
+
+            <div class="footer-row">
+
+                <div class="footer-col">
+
+                    <h4><tt>"Información"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Compresiones</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Colecciones</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h4><tt>"Explorar"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Discos de Regalo</a></li>
+                        <li><a href="#">Ultimos Discos</a></li>
+                        <li><a href="#">Temas</a></li>
+                        <li><a href="#">Discos Populares</a></li>
+                        <li><a href="#">Habilidades Artísticas</a></li>
+                        <li><a href="#">Nuevos Lanzamientos</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h4><tt>"Legal"</tt></h4>
+
+                    <ul class="links">
+
+                        <li><a href="#">Acuerdos del Cliente</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                        <li><a href="#">Testimonios</a></li>
+                        <li><a href="#">Media Kit</a></li>
+
+                    </ul>
+
+                    </div>
+
+                    <div class="footer-col">
+
+                    <h4><tt>"Newsletter"</tt></h4>
+
+                    <p>
+                        <tt>Suscribete a nuestro newsletter para una dosis semanal
+                        de noticias, actualizaciones, consejos útiles, y
+                        ofertas exclusivas.</tt>
+                    </p>
+
+                    <form class="feet" action="#">
+
+                        <input type="text" placeholder="Correo" required>
+                        <button type="submit"><tt>SUSCRIBIR</tt></button>
+
+                    </form>
+
+                    <div class="icons">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h6 style="text-align: center;">© <tt>2025 Dino-Music™ & Mumayacon . Todos los derechos reservados.</tt></h6>
+
+            <br>
+
+        </section>
+        
+    </body>
+
+</html>
